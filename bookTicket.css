@@ -1,0 +1,63 @@
+.container{
+    display:flex;
+    justify-content: left;
+}
+body{
+    background-image: url(kiyoshi-qMOXAHjfd18-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    /* margin-top: 10px; */
+    margin-left:210px;
+    margin-bottom: 0;
+    color:rgb(255, 98, 0);
+    font-size: 1.2rem;
+}
+input,select{
+    margin-top:5px;
+    margin-bottom: 20px;
+    height:25px;
+    width:250px;
+    border-radius: 5px;
+    border:1px solid;
+}
+label{
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+button{
+    width:250px;
+    height:40px;
+    border-radius: 20px;
+    border:1px solid;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+#address{
+    height:70px;
+}
+star{
+    color:red;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}
+/* .box{
+    margin-left:200px;
+    width:400px;
+    height:550px;
+    border:1px solid black;
+    border-radius: 20px;
+} */
+form{
+    /* background-color: rgb(229, 234, 234); */
+    margin-left: 200px;
+    /* padding-top:30px; */
+    padding-left:50px;
+}
+select{
+
+}

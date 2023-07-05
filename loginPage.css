@@ -1,0 +1,41 @@
+body{
+    background-image: url(login2.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+form{
+    margin-top: 200px;
+}
+label{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width:200px;
+    height:25px;
+    border-radius: 5px;
+    border:1px solid;
+}
+button{
+    /* margin-left: 570px; */
+    width:90px;
+    height:35px;
+    border-radius: 20px;
+    border:1px solid;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}
+.successful{
+    display:none;
+}

@@ -1,0 +1,32 @@
+body{
+    background-image: url(kiyoshi-qMOXAHjfd18-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:rgb(20, 21, 20);
+}
+h1{
+    margin-left:100px;
+    margin-top:50px;
+}
+.labels{
+    margin-left: 150px;
+    font-size: 1.6rem;
+}
+.box{
+    border:0.5 solid black;
+    margin-left: 200px;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+button{
+    width:150px;
+    height:30px;
+    background-color: rgb(86, 241, 69);
+    color:white;
+    border:1px solid rgb(86, 241, 69);
+    border-radius:4px;
+}
+button:hover{
+    background-color: rgb(12, 137, 12);
+}

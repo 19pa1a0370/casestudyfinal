@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Registration</title>
+    <link rel="stylesheet" href="passengerRegistration.css">
+</head>
+<body onload="RandIntGen()">
+    <header><h1>Passenger Registration</h1></header><br>
+    <div class="container">
+        <div class="box">
+            <form action="registerpopup.html">
+                <label for="">Passenger ID: </label>
+                <input name="PNRNo" id="PNRNo" hidden>
+                <label for="" id="pnrno" name = "PNRNO"></label>
+                <br>
+                <br>
+                <label for="">Passenger Name <star>*</star></label>
+                <br>
+                <input type="text" id="Pid" name="PassName" required maxlength="30">
+                <br>
+                <label for="">email <star>*</star></label>
+                <br>
+                <input type="email" id = "mail" name = "gmail" required>
+                <br>
+                <label for="">Password <star>*</star></label>
+                <br>
+                <input type="password" maxlength="30" required>
+                <br>
+                <label for="">Address <star>*</star></label>
+                <br>
+                <textarea type="text"  row = 8 required style ="width:250px;height:50px;margin-bottom: 20px;"></textarea>
+                <br>
+                <label for="">Contact Number <star>*</star></label>
+                <br>
+                <input type="tel" pattern="\d{10}" maxlength="10" name ="contactNo." required>
+                <br><br>
+                <a href="loginPage.html"><button id = "btn">Register</button></a>
+            </form>  
+            <script>
+                
+                function RandIntGen(){
+                    var randNum = Math.floor(Math.random()*9000000)+1000000;
+                    document.getElementById("pnrno").innerHTML = randNum;
+                    document.getElementById("PNRNo").value=randNum;
+                }
+            </script>
+        </div>
+        
+    </div>
+</body>
+</html>

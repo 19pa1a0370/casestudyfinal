@@ -1,0 +1,29 @@
+body{
+    background-image: url(travelpage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+button{
+    width:250px;
+    height: 60px;
+    border-radius: 10px;
+    
+    font-weight:bold;
+    font-size:1.15rem;
+    color:black;
+}
+h1{
+    color:rgb(237, 121, 121);
+}
+#login{
+    margin-top:200px;
+    margin-bottom:30px;
+}
+button:hover{
+    background-image: linear-gradient(to right,white,rgb(144, 149, 144));
+    /* background-color: black; */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookingTicketPopup.css">
+</head>
+<body>
+    <div class="caontainer">
+        <div class="box">
+            <h1>Booking Successful✅</h1>
+            <div class = "labels">
+                <label for="">PNR No. : <label id = "PNRNO"></label></label><br>        
+                <label for="">Date of Travel: </label><label id="travelDate"></label><br>
+                <label for="">Seat : <label for="" id="seat"></label> </label><br>
+                <label for="">Meal : <label for="" id="meal"></label></label><br>
+                <label for="">Source : <label for="" id="source"></label></label><br>
+                <label for="">Destination: <label for="" id="destination"></label></label>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('load', () => {
+            const param = (new URL(document.location)).searchParams;
+            const PNRNO = param.get('PNRNO');
+            const date = param.get('date');
+            const source =param.get('source');
+            const destination = param.get('destination');
+            const meal = param.get('meal');
+            const seat = param.get('seat');
+
+            document.getElementById('PNRNO').innerHTML = PNRNO;
+            document.getElementById('source').innerHTML=source;
+            document.getElementById('destination').innerHTML=destination;
+            document.getElementById('travelDate').innerHTML=date;
+            document.getElementById('meal').innerHTML = meal;
+            document.getElementById('seat').innerHTML = seat;
+        })
+        </script>
+</body>
+</html>
